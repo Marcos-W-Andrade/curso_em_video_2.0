@@ -33,85 +33,20 @@ body {
     background-color: var(--cor2);
     font-family: var(--fonte-padrao);
 }
-
-header {
-    background-image: linear-gradient(to top, #063d1e 5%, #1a5c37, #2fa866, #3ddc84);
-    font-size: 2em;
-    font-family: var(--fonte-destaque);
-    color: white;
-    text-align: center;
-    text-shadow: 2px 2px 2px var(--cor6);
-    width: auto;
-    height: 250px;
-    margin: auto;
-    padding: 15px;
-}
-header > p {
-    font-size: 0.7em;
-    padding: 30px;
-    width: auto;
+body p {
+    font-size: 18px;
 }
 
-nav {
-    background-color: var(--cor6);
-    width: auto;
-    margin: auto;
-    padding: 30px;
+a.externo::after{
+    content: '\00A0\1F517';
 }
-nav > a {
-    color: white;
-    font-weight: bold;
-    text-align: left;
-    text-decoration: none;
-    padding: 8px;
-    margin: auto;
-    display: inline-block;
-    justify-content: left;
-}
-nav > a:visited {
-    color: white;
-    text-decoration: none;
-}
-nav > a:hover {
-    border-radius: 5px;
-    background-color: var(--cor4);
-    color: white;
-}
-
-main {
-    background-color: white;
-    text-align: justify;
-    padding: 15px;
-    max-width: 800px;
-    min-width: 320px;
-    margin: auto;
-}
-
-picture {
-    display: flex;
-    width: auto;
-}
-picture > img {
-    display: flex;
-    width: auto;
-}
-
-h2, h3 {
-    background-image: linear-gradient(to right, var(--cor2), var(--cor1), white);    
-    font-family: var(--font-android);
-    text-align: left;
-    text-shadow: 1px 1px 1px #063d1e73;
-    color: var(--cor5);
-    padding: 5px;
-    margin: auto;
-}
-
 p {
     font-size: 14px;
     text-indent: 30px;
+    line-height: 1.8em;
     padding: 15px;
     width: auto;
-    margin: auto;
+    margin: 15px 0px;
 }
 p > a {
     text-decoration: none;
@@ -126,18 +61,128 @@ p > strong {
     color: var(--cor5);
 }
 
-span > a {
+header {
+    background-image: linear-gradient(to top, #063d1e 5%, #1a5c37, #2fa866, #3ddc84);
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 3px var(--cor6);
+    min-height: 150px;
+    padding-top: 40px;
+}
+header > h1{
+    font-size: 3.3em;
+    font-family: var(--fonte-destaque);
+    font-weight: normal;
+    color: white;
+    margin-bottom: 25px;
+    padding-right: 15px;
+    padding-left: 15px;
+
+}
+header > p {
+    text-indent: 0px;
+    font-size: 1.3em;
+    padding: 20px;
+    width: auto;
+    margin: 0px auto;
+}
+
+nav {
+    background-color: var(--cor6);
+    font-size: 14px;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.51);
+    width: auto;
+    margin: 0px auto;
+    padding: 20px;
+}
+nav > a {
+    color: white;
+    font-weight: bold;
+    text-align: left;
+    text-decoration: none;
+    padding: 5px;
+    margin: auto;
+    margin-right: 15px;
+    display: inline-block;
+    justify-content: left;
+    transition-duration: 0.5s;
+}
+nav > a:visited {
     color: white;
     text-decoration: none;
 }
+nav > a:hover {
+    border-radius: 5px;
+    background-color: var(--cor4);
+    color: white;
+}
+
+main {
+    background-color: white;
+    text-align: justify;
+    padding: 20px;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.51);
+    min-width: 280px;
+    max-width: 750px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+picture > img {
+    display: block;
+    justify-content: center;
+    min-width: 380px;
+    max-width: 600px;
+}
+img {
+    display: block;
+    justify-content: center;
+    max-width: 250px;
+    margin: auto;
+}
+
+h2, h3 {
+    background-image: linear-gradient(to right, var(--cor2), var(--cor1), white);    
+    font-family: var(--font-android);
+    font-weight: normal;
+    text-align: left;
+    text-shadow: 1px 1px 1px #063d1e73;
+    color: var(--cor5);
+    padding: 5px;
+    margin: auto;
+}
+
+h4 {
+    background-color: var(--cor5);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+aside {
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 10px;
+}
+aside ul {
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+}
+
+video
 
 li {
-    text-decoration: none;
+    line-height: 2em;
+}
+
+span > a {
+    color: white;
 }
 
 footer {
     background-color: var(--cor6);
-    font-size: 10px;
+    font-size: 12px;
     text-align: center;
     text-indent: 0px;
     color: white;
@@ -145,5 +190,6 @@ footer {
     width: auto;
     margin: auto;
 }
-
-
+footer a {
+    text-decoration: none;
+}
